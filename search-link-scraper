@@ -1,0 +1,4 @@
+for i in {1..500}
+do
+    curl "https://deckstats.net/decks/f/edh-commander/?lng=en&page=$i" | tac | tac | perl -n -e'/\<a href\=\"(.*?)\"/ && print "$1\n"' |  awk '/\/en$/' >> list-links.txt
+done
