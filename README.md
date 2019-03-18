@@ -16,3 +16,6 @@ Optionally, the first line can have the letter `C` instead of a number, signifyi
 (This should always be the case, but currently the behaviour on malformed or incomplete lists is mostly undetermined).
 
 Note that sending too many requests to deckstats can result in getting your IP temporarily blocked :(.
+
+Currently there's an unresolved issue from the 20th deck on when running `list-scraper`.
+Strangely, does not seem to be connected to the IP blocking.

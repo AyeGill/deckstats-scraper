@@ -2,7 +2,18 @@
 import json
 import sys
 input = sys.stdin.read()
-js = json.loads(input)
+
+try:
+    js = json.loads(input)
+except json.decoder.JSONDecodeError:
+    sys.stderr.write("JSON load err\n")
+    sys.stderr.write(input)
+    sys.stderr.write("\n")
+finally:
+    sys.stderr.write("No err\n")
+
+if (input == ""):
+    sys.exit()
 
 #First find commander and print that, tagged with a "C" rather than a number (so we can represent partial decklists without cmdrs easily)
 for i in range(len(js['sections'])):
