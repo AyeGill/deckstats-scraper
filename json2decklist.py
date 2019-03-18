@@ -24,7 +24,7 @@ for i in range(len(js['sections'])):
 # Some people put the commander in the board for some reason.
 for i in range(len(js['sideboard'])):
         if js['sideboard'][i]['isCommander']:
-            print("C", js['sideboard'][i]['name'], "C", sep=" ")
+            print("C", js['sideboard'][i]['name'], sep=" ")
 
 # Then print all non-commander cards (here we shouldn't check board)
 for i in range(len(js['sections'])):

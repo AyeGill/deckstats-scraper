@@ -1,1 +1,1 @@
- ctr=0;while read link; do curl $link | ./page2deckjson | ./json2decklist.py > decks/deck_$ctr;echo $((ctr++)); done < lists-links.txt 
+ ctr=0;while read link; do curl $link | ./page2deckjson | ./json2decklist.py > decks/deck_$ctr;echo $((ctr++));sleep 1; done < lists-links.txt 

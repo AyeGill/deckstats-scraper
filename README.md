@@ -20,5 +20,6 @@ Note that sending too many requests to deckstats can result in getting your IP t
 
 Currently there's an unresolved issue from the 20th deck on when running `list-scraper`.
 Strangely, does not seem to be connected to the IP blocking.
+May still be related, my diagnosis was wrong.
 
 Currently working on using a single `curl` process to get all the pages, which might fix the issue. UPDATE: did not seem to resolve the issue.
