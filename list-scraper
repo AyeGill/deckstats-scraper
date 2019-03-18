@@ -1,1 +1,1 @@
- ctr = 0;while read link; do curl --socks5-hostname localhost:9050 $link | ./page2deckjson | ./json2decklist.py > decks/deck_$ctr; $((ctr++)); done < lists-links.txt 
+ ctr = 0;while read link; do curl $link | ./page2deckjson | ./json2decklist.py > decks/deck_$ctr; $((ctr++)); done < lists-links.txt 
