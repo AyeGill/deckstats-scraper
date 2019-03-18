@@ -1,0 +1,1 @@
+while read l; do echo "url=\"$l\"";done <lists-links.txt > curl-links.txt
