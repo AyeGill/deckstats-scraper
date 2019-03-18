@@ -4,6 +4,7 @@ A collection of scripts to scrape [deckstats](https://deckstats.net) for decklis
 Mostly intended for EDH decklists.
 So fragile that practically any update will break it - don't use it for something important!
 
+deckstats seems to be the only major decklist site which provides decklist in a format which can be easily scraped.
 
 - `page2deckjson` is just a super-simple regex script that takes the output of `curl <decklist-page>` and outputs the json string corresponding to the decklist.
 - `json2decklist.py` is a simple python script that reads json input and outputs a list of cards and quantities. Has special logic for commanders, does not output sideboards (unless the commander is there).

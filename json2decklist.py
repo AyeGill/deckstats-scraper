@@ -21,7 +21,7 @@ for i in range(len(js['sections'])):
         if js['sections'][i]['cards'][k]['isCommander']:
             print("C", js['sections'][i]['cards'][k]['name'], sep=" ")
 
-# Some people put the command in the board for some reason.
+# Some people put the commander in the board for some reason.
 for i in range(len(js['sideboard'])):
         if js['sideboard'][i]['isCommander']:
             print("C", js['sideboard'][i]['name'], "C", sep=" ")
